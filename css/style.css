@@ -89,6 +89,11 @@ iframe[src*="chatling.ai"] {
   font-size: 14px !important;
 }
 
+.chtl-widget {
+  font-size: 14px !important;
+  padding: 10px !important;
+}
+
 @media (max-width: 600px) {
   iframe[src*="chatling.ai"] {
     width: 260px !important;
