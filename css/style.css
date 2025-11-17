@@ -44,9 +44,11 @@ nav ul li a {
   text-decoration: none;
   border-radius: 5px;
 }
+
 .btn:hover {
   background: #005f87;
 }
+
 .btn-center {
   text-align: center;
   margin-top: 20px;
@@ -78,4 +80,13 @@ footer {
   padding: 10px;
   background: #1a1a2e;
   color: #fff;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #ff9800;
 }
