@@ -75,6 +75,19 @@ nav ul li a.resume-btn:hover {
   background: #e68900;   /* darker orange on hover */
 }
 
+#chtl-script {
+  width: 300px !important;
+  height: 400px !important;
+}
+
+/* Optional: override the iframe container if needed */
+iframe[src*="chatling.ai"] {
+  width: 300px !important;
+  height: 400px !important;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
 footer {
   text-align: center;
   padding: 10px;
