@@ -28,29 +28,27 @@ nav ul li a {
   text-decoration: none;
 }
 
-.intro-container {
+.header-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 30px;              /* space between photo and text */
-  flex-wrap: wrap;        /* ensures responsiveness on smaller screens */
+  justify-content: space-between; /* pushes text left, photo right */
+  flex-wrap: wrap; /* responsive on smaller screens */
 }
 
-.intro-photo {
+.header-text {
+  flex: 2;
+}
+
+.header-photo {
   flex: 1;
-  text-align: center;
+  text-align: right; /* aligns photo to the right */
 }
 
 .profile-pic {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;     /* circular photo */
-  border: 3px solid #0077b6;
-}
-
-.intro-text {
-  flex: 2;
-  max-width: 600px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;       /* circular photo */
+  border: 3px solid #0077b6; /* accent border */
 }
 
 #intro h2 {
