@@ -91,3 +91,9 @@ nav ul li a.resume-btn:hover {
   color: #ff9800;        /* orange accent on hover */
 }
 
+footer {
+  background: #1a1a2e;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
