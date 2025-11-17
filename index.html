@@ -85,8 +85,18 @@
   </footer>
 
   <!-- Chatling Floating Widget -->
-  <script> window.chtlConfig = { chatbotId: "1462646635" } </script>
-  <script async data-id="1462646635" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
+  <script>
+  setTimeout(() => {
+    window.chtlConfig = { chatbotId: "1462646635", display: "floating" };
+    const script = document.createElement("script");
+    script.src = "https://chatling.ai/js/embed.js";
+    script.async = true;
+    script.setAttribute("data-id", "1462646635");
+    script.id = "chtl-script";
+    document.body.appendChild(script);
+    }, 3000); // opens after 3 seconds
+  </script>
+
 
 </body>
 </html>
