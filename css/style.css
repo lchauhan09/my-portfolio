@@ -85,6 +85,8 @@ iframe[src*="chatling.ai"] {
   zoom: 0.85 !important;
   transform: scale(0.85);
   transform-origin: bottom right;
+  width: 300px !important;
+  height: 400px !important;
 }
 
 .chtl-widget {
