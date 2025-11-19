@@ -9,41 +9,36 @@ title: Contact | Lokesh Chauhan
         I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
     </p>
 
-    <div class="projects-grid">
-        <!-- Email -->
-        <a href="mailto:lokesh.chauhan09@gmail.com" class="project-card">
-            <i class="fas fa-envelope"></i>
-            <h3>Email Me</h3>
-            <p>lokesh.chauhan09@gmail.com</p>
-        </a>
+    <div class="contact-container">
+        <!-- Left Column: Contact Info -->
+        <div class="contact-info">
+            <h3>Let's Chat</h3>
+            <p>Feel free to reach out directly or book a time on my calendar.</p>
 
-        <!-- Phone -->
-        <a href="tel:+17059776952" class="project-card">
-            <i class="fas fa-phone-alt"></i>
-            <h3>Call Me</h3>
-            <p>(705) 977-6952</p>
-        </a>
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:lokesh.chauhan09@gmail.com">lokesh.chauhan09@gmail.com</a>
+            </div>
 
-        <!-- Calendly -->
-        <a href="https://calendly.com/lokesh-chauhan09/30min" target="_blank" class="project-card">
-            <i class="fas fa-calendar-check"></i>
-            <h3>Book a Meeting</h3>
-            <p>Schedule a 30-min chat via Calendly</p>
-        </a>
+            <div class="contact-item">
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+17059776952">(705) 977-6952</a>
+            </div>
 
-        <!-- Resume -->
-        <a href="{{ " /Lokesh_Chauhan.pdf" | relative_url }}" target="_blank" class="project-card">
-            <i class="fas fa-file-pdf"></i>
-            <h3>My Resume</h3>
-            <p>Download PDF</p>
-        </a>
+            <div class="contact-actions">
+                <a href="{{ " /Lokesh_Chauhan.pdf" | relative_url }}" target="_blank" class="btn">Download Resume</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6H0U6Pb505SsBXzaIL7adVoluevKHESt2JprrB7aPtz57uw/viewform"
+                    target="_blank" class="btn" style="background-color: #555;">Feedback</a>
+            </div>
+        </div>
 
-        <!-- Feedback -->
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6H0U6Pb505SsBXzaIL7adVoluevKHESt2JprrB7aPtz57uw/viewform"
-            target="_blank" class="project-card">
-            <i class="fas fa-comment-dots"></i>
-            <h3>Feedback</h3>
-            <p>Share your thoughts anonymously</p>
-        </a>
+        <!-- Right Column: Calendly Embed -->
+        <div class="calendly-embed">
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/lokesh-chauhan09/30min"
+                style="min-width:320px;height:630px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+        </div>
     </div>
 </section>
