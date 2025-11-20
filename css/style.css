@@ -1,48 +1,16 @@
-:root {
-  --bg-color: #f9f9f9;
-  --text-color: #333;
-  --header-bg: #1a1a2e;
-  --header-text: #fff;
-  --card-bg: #fff;
-  --accent-color: #0077b6;
-  --accent-hover: #005f87;
-  --resume-btn-bg: #ff9800;
-  --resume-btn-hover: #e68900;
-  --secondary-text: #555;
-  --card-title: #1a1a2e;
-  --shadow-color: rgba(0, 0, 0, 0.1);
-}
-
-[data-theme="dark"] {
-  --bg-color: #121212;
-  --text-color: #e0e0e0;
-  --header-bg: #0d0d1a;
-  --header-text: #e0e0e0;
-  --card-bg: #1e1e1e;
-  --accent-color: #4cc9f0;
-  --accent-hover: #3aa8cc;
-  --resume-btn-bg: #ff9800;
-  --resume-btn-hover: #e68900;
-  --secondary-text: #bbb;
-  --card-title: #fff;
-  --shadow-color: rgba(255, 255, 255, 0.1);
-}
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   line-height: 1.6;
-  background: var(--bg-color);
-  color: var(--text-color);
-  transition: background 0.3s, color 0.3s;
+  background: #f9f9f9;
+  color: #333;
 }
 
 header {
-  background: var(--header-bg);
-  color: var(--header-text);
+  background: #1a1a2e;
+  color: #fff;
   padding: 20px;
   text-align: center;
-  transition: background 0.3s, color 0.3s;
 }
 
 nav ul {
@@ -56,7 +24,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--header-text);
+  color: #fff;
   text-decoration: none;
 }
 
@@ -71,15 +39,14 @@ nav ul li a {
 .btn {
   display: inline-block;
   padding: 10px 15px;
-  background: var(--accent-color);
+  background: #0077b6;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  transition: background 0.3s;
 }
 
 .btn:hover {
-  background: var(--accent-hover);
+  background: #005f87;
 }
 
 .btn-center {
@@ -91,13 +58,12 @@ section {
   padding: 20px;
   margin: 20px auto;
   max-width: 800px;
-  background: var(--card-bg);
+  background: #fff;
   border-radius: 8px;
-  transition: background 0.3s;
 }
 
 nav ul li a.resume-btn {
-  background: var(--resume-btn-bg);
+  background: #ff9800;
   /* orange background */
   color: #fff;
   /* white text */
@@ -105,11 +71,10 @@ nav ul li a.resume-btn {
   border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
-  transition: background 0.3s;
 }
 
 nav ul li a.resume-btn:hover {
-  background: var(--resume-btn-hover);
+  background: #e68900;
   /* darker orange on hover */
 }
 
@@ -140,9 +105,8 @@ iframe[src*="chatling.ai"] {
 footer {
   text-align: center;
   padding: 10px;
-  background: var(--header-bg);
-  color: var(--header-text);
-  transition: background 0.3s, color 0.3s;
+  background: #1a1a2e;
+  color: #fff;
 }
 
 .footer-links {
@@ -154,14 +118,14 @@ footer {
   margin: 0 15px;
   font-size: 16px;
   /* text size */
-  color: var(--header-text);
+  color: #fff;
   /* white text/icons */
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-links a:hover {
-  color: var(--resume-btn-bg);
+  color: #ff9800;
   /* orange accent on hover */
 }
 
@@ -179,39 +143,35 @@ footer {
 }
 
 .project-card {
-  background: var(--card-bg);
+  background: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px var(--shadow-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #eee;
-}
-
-[data-theme="dark"] .project-card {
-  border-color: #333;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 12px var(--shadow-color);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
 }
 
 .project-card i {
   font-size: 2.5rem;
-  color: var(--accent-color);
+  color: #0077b6;
   margin-bottom: 15px;
 }
 
 .project-card h3 {
   margin: 10px 0;
   font-size: 1.2rem;
-  color: var(--card-title);
+  color: #1a1a2e;
 }
 
 .project-card p {
   font-size: 0.95rem;
-  color: var(--secondary-text);
+  color: #555;
   line-height: 1.5;
 }
 
@@ -224,7 +184,7 @@ a.project-card {
 }
 
 a.project-card:hover h3 {
-  color: var(--accent-color);
+  color: #0077b6;
   /* Highlight title on hover */
 }
 
@@ -242,17 +202,16 @@ a.project-card:hover h3 {
   flex: 1;
   min-width: 300px;
   max-width: 400px;
-  background: var(--card-bg);
+  background: #fff;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px var(--shadow-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
-  transition: background 0.3s;
 }
 
 .contact-info h3 {
   margin-top: 0;
-  color: var(--accent-color);
+  color: #0077b6;
 }
 
 .contact-item {
@@ -263,7 +222,7 @@ a.project-card:hover h3 {
 }
 
 .contact-item i {
-  color: var(--accent-color);
+  color: #0077b6;
   margin-right: 15px;
   font-size: 1.2rem;
   width: 25px;
@@ -271,13 +230,13 @@ a.project-card:hover h3 {
 }
 
 .contact-item a {
-  color: var(--text-color);
+  color: #333;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .contact-item a:hover {
-  color: var(--accent-color);
+  color: #0077b6;
 }
 
 .contact-actions {
@@ -292,20 +251,4 @@ a.project-card:hover h3 {
   max-width: 500px;
   height: 650px;
   /* Ensure container has height for widget */
-}
-
-/* Theme Toggle Button */
-#theme-toggle {
-  background: none;
-  border: none;
-  color: var(--header-text);
-  cursor: pointer;
-  font-size: 1.2rem;
-  padding: 5px;
-  margin-left: 10px;
-  transition: color 0.3s;
-}
-
-#theme-toggle:hover {
-  color: var(--resume-btn-bg);
 }
