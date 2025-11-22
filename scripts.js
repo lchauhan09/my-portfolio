@@ -2,16 +2,41 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 const themeToggle = document.getElementById('themeToggle');
 const root = document.documentElement;
-const saved = localStorage.getItem('theme');
-if(saved) root.setAttribute('data-theme', saved);
+const icon = themeToggle?.querySelector('i');
 
+// Function to set theme
+function setTheme(theme) {
+  root.setAttribute('data-theme', theme);
+  localStorage.setItem('theme', theme);
+  updateIcon(theme);
+}
+
+// Function to update icon
+function updateIcon(theme) {
+  if (icon) {
+    icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+  }
+}
+
+// Initialize Theme
+const savedTheme = localStorage.getItem('theme');
+const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (savedTheme) {
+  setTheme(savedTheme);
+} else if (systemPrefersDark) {
+  setTheme('dark');
+} else {
+  setTheme('light');
+}
+
+// Toggle Event Listener
 themeToggle?.addEventListener('click', () => {
-  const cur = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-  if(cur === 'dark') root.setAttribute('data-theme','dark'); else root.removeAttribute('data-theme');
-  localStorage.setItem('theme', cur === 'dark' ? 'dark' : 'light');
+  const currentTheme = root.getAttribute('data-theme');
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  setTheme(newTheme);
 });
 
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.getElementById('navLinks');
 menuToggle?.addEventListener('click', () => navLinks.classList.toggle('show'));
-
