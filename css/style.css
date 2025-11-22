@@ -572,6 +572,7 @@ footer {
   margin-top: 8px;
   gap: 8px;
   align-items: center;
+  padding-bottom: 10px;
   /* Align dots vertically */
 }
 
