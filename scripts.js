@@ -51,4 +51,31 @@ document.addEventListener('DOMContentLoaded', () => {
   if (menuToggle && navLinks) {
     menuToggle.addEventListener('click', () => navLinks.classList.toggle('show'));
   }
+  // Carousel Logic
+  const track = document.querySelector('.carousel-track');
+  const slides = Array.from(track?.children || []);
+  const nextBtn = document.getElementById('nextBtn');
+  const prevBtn = document.getElementById('prevBtn');
+
+  if (track && slides.length > 0 && nextBtn && prevBtn) {
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      const slideWidth = slides[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      updateCarousel();
+    });
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      updateCarousel();
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', updateCarousel);
+  }
 });
