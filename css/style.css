@@ -604,3 +604,13 @@ footer {
     margin-top: 20px;
   }
 }
+
+/* Interactive Image Styles */
+.interactive-image {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.interactive-image:hover {
+  transform: scale(1.05);
+}
