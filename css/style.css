@@ -167,30 +167,41 @@ nav ul li a:hover {
 }
 
 /* Mobile Navigation */
+/* Mobile Navigation */
 @media (max-width: 768px) {
   .hamburger-menu {
     display: flex;
+    z-index: 1001;
+    /* Ensure above menu */
   }
 
   nav ul.nav-links {
-    display: none;
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 250px;
+    height: 100vh;
     background-color: var(--header-bg);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 20px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: -250px;
+    /* Hide off-screen */
+    padding-top: 80px;
+    /* Space for hamburger */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
   }
 
   nav ul.nav-links.active {
-    display: flex;
+    left: 0;
+    /* Slide in */
   }
 
   nav ul li {
     display: block;
-    margin: 15px 0;
+    margin: 20px 0;
+    text-align: left;
+    padding-left: 30px;
   }
 
   /* Hamburger Animation */
