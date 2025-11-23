@@ -150,6 +150,69 @@ nav ul li a:hover {
   color: var(--accent-color);
 }
 
+/* Hamburger Menu */
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  /* Left side on mobile */
+  z-index: 100;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--header-text);
+  transition: all 0.3s ease;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
+  nav ul.nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--header-bg);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul.nav-links.active {
+    display: flex;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 15px 0;
+  }
+
+  /* Hamburger Animation */
+  .hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
 /* Theme Toggle Button */
 .theme-toggle {
   position: absolute;

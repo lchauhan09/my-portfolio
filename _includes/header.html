@@ -4,7 +4,7 @@
     </button>
     <div class="header-content">
         <div class="profile-img-container">
-            <img src="{{ "/img/profile.jpg" | relative_url }}" alt="Lokesh Chauhan" class="profile-img">
+            <img src="{{ " /img/profile.jpg" | relative_url }}" alt="Lokesh Chauhan" class="profile-img">
         </div>
         <div class="header-text">
             <h1>Lokesh Chauhan</h1>
@@ -12,13 +12,18 @@
         </div>
     </div>
     <nav>
-        <ul>
-            <li><a href="{{ "/index.html" | relative_url }}">Home</a></li>
-            <li><a href="{{ "/experience.html" | relative_url }}">Experience</a></li>
-            <li><a href="{{ "/project.html" | relative_url }}">Projects</a></li>
-            <li><a href="{{ "/certificates.html" | relative_url }}">Certifications</a></li>
-            <li><a href="{{ "/contact.html" | relative_url }}">Contact</a></li>
-            <li><a href="{{ "/Lokesh_Chauhan.pdf" | relative_url }}" target="_blank" class="resume-btn">Resume</a></li>
+        <button class="hamburger-menu" aria-label="Toggle Navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="{{ " /index.html" | relative_url }}">Home</a></li>
+            <li><a href="{{ " /experience.html" | relative_url }}">Experience</a></li>
+            <li><a href="{{ " /project.html" | relative_url }}">Projects</a></li>
+            <li><a href="{{ " /certificates.html" | relative_url }}">Certifications</a></li>
+            <li><a href="{{ " /contact.html" | relative_url }}">Contact</a></li>
+            <li><a href="{{ " /Lokesh_Chauhan.pdf" | relative_url }}" target="_blank" class="resume-btn">Resume</a></li>
         </ul>
     </nav>
 </header>
