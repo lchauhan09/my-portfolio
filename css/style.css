@@ -175,7 +175,137 @@ nav ul li a:hover {
   font-weight: 500;
 }
 
-/* ... */
+.btn-center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 900px;
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 2px 5px var(--card-shadow);
+}
+
+nav ul li a.resume-btn {
+  background: #ff9800;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav ul li a.resume-btn:hover {
+  background: #e68900;
+  color: #fff;
+}
+
+/* Chatling Widget */
+#chtl-script {
+  width: 400px !important;
+  height: 450px !important;
+}
+
+iframe[src*="chatling.ai"] {
+  zoom: 0.85 !important;
+  transform: scale(0.85);
+  transform-origin: bottom right;
+}
+
+.chtl-widget {
+  font-size: 14px !important;
+  padding: 10px !important;
+}
+
+@media (max-width: 600px) {
+  iframe[src*="chatling.ai"] {
+    width: 260px !important;
+    height: 360px !important;
+  }
+
+  .theme-toggle {
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: var(--header-bg);
+  color: var(--header-text);
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  display: inline-block;
+  margin: 0 15px;
+  font-size: 18px;
+  color: var(--header-text);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--accent-color);
+}
+
+.footer-links i {
+  margin-right: 5px;
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px var(--card-shadow);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 1px solid var(--border-color);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  /* Remove underline for anchor tags */
+  display: block;
+  /* Ensure it behaves like a block for layout */
+  color: inherit;
+  /* Inherit text color */
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 119, 182, 0.4);
+  /* Glow effect */
+  border-color: var(--accent-color);
+}
+
+[data-theme="dark"] .project-card:hover {
+  box-shadow: 0 15px 30px rgba(72, 202, 228, 0.25);
+  /* Softer glow for dark mode */
+}
+
+.project-card i {
+  font-size: 3rem;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
 
 .project-card h3 {
   margin: 10px 0;
