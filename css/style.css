@@ -150,6 +150,31 @@ nav ul li a:hover {
   color: var(--accent-color);
 }
 
+/* Theme Toggle Button */
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: 2px solid var(--header-text);
+  color: var(--header-text);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--header-text);
+  color: var(--header-bg);
+  transform: scale(1.1);
+}
+
 #intro h2 {
   text-align: center;
   font-size: 2rem;
