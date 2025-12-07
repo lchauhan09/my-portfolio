@@ -1,5 +1,5 @@
 title: Lokesh Chauhan Portfolio
 description: Portfolio of Lokesh Chauhan - Messaging Specialist & CCNA Certified
-baseurl: "/my-portfolio" # the subpath of your site, e.g. /blog
-url: "https://lchauhan09.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://lokesh.is-a.dev" # the base hostname & protocol for your site
 theme: jekyll-theme-primer # Optional, but good for defaults if needed. We are using custom CSS though.
