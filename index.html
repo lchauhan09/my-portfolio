@@ -1,51 +1,72 @@
 ---
 layout: default
-title: Lokesh Chauhan | Portfolio
+title: Lokesh Chauhan | Digital Nexus
 ---
 
-<section class="hero-clean">
-  <div class="hero-content-clean">
-    <h1 class="hero-title-clean">Lokesh Chauhan</h1>
-    <p class="hero-subtitle-clean">Messaging Specialist & Microsoft 365 Engineer</p>
-    <p class="hero-bio">
-      I design and secure enterprise communication systems. Specializing in Exchange Online,
-      Microsoft Defender, and Purview for large-scale organizations.
-    </p>
+<section class="hero-nexus section-full">
+  <div class="container">
+    <div class="hero-grid">
 
-    <div class="hero-actions-clean">
-      <a href="{{ "/project.html" | relative_url }}" class="btn btn-primary">
-        View Projects
-      </a>
-      <a href="{{ "/contact.html" | relative_url }}" class="btn">
-        Contact Me
-      </a>
-    </div>
-  </div>
+      <!-- Typography & Title -->
+      <div class="hero-main">
+        <p class="mono-label fade-in">System Online // Version 2.0</p>
+        <h1 class="display-text split-reveal">
+          Lokesh<br>Chauhan
+        </h1>
+        <h2 class="role-text fade-in-delay">Messaging Specialist &<br>Microsoft 365 Engineer</h2>
 
-  <div class="hero-visual">
-    <div class="code-block">
-      <span class="code-comment">// Certified Professional</span>
-      <span class="code-line"><span class="kw">const</span> role = <span class="str">"Messaging
-          Specialist"</span>;</span>
-      <span class="code-line"><span class="kw">const</span> experience = <span class="num">5</span>; <span
-          class="code-comment">// Years</span></span>
-      <span class="code-line"><span class="kw">const</span> certs = [<span class="str">"CCNA"</span>, <span
-          class="str">"M365"</span>];</span>
+        <div class="hero-actions fade-in-delay-2">
+          <a href="{{ "/project.html" | relative_url }}" class="btn-cyber">
+            <i class="fa-solid fa-code-branch"></i> Initialize Projects
+          </a>
+          <a href="{{ "/contact.html" | relative_url }}" class="btn-cyber"
+            style="--accent-primary: #7000ff; --accent-glow: rgba(112, 0, 255, 0.2);">
+            <i class="fa-solid fa-satellite-dish"></i> Establish Comms
+          </a>
+        </div>
+      </div>
+
+      <!-- Stats / Data Panel -->
+      <div class="hero-data glass-panel fade-in-right">
+        <div class="data-row">
+          <span class="mono-label">Security Clearance</span>
+          <span class="data-value">Level 5 (Expert)</span>
+        </div>
+        <div class="data-row">
+          <span class="mono-label">Core Systems</span>
+          <span class="data-value">Exchange · Defender · Purview</span>
+        </div>
+        <div class="data-row">
+          <span class="mono-label">Uptime</span>
+          <span class="data-value">99.99%</span>
+        </div>
+
+        <div class="status-indicator">
+          <div class="pulse-dot"></div>
+          <span>Systems Normal</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<section class="features-clean">
-  <div class="feature-card">
-    <h3>Security First</h3>
-    <p>Expertise in Defender, ATP, and Zero Trust architecture.</p>
-  </div>
-  <div class="feature-card">
-    <h3>Cloud Native</h3>
-    <p>Seamless migrations to Exchange Online and Azure.</p>
-  </div>
-  <div class="feature-card">
-    <h3>Automation</h3>
-    <p>PowerShell scripting for lifecycle management.</p>
+<section class="features-nexus container">
+  <div class="grid-3">
+    <div class="feature-card glass-panel scroll-reveal">
+      <i class="fa-solid fa-shield-halved feature-icon"></i>
+      <h3>Security First</h3>
+      <p>Architecting Zero Trust environments with Microsoft Defender and ATP.</p>
+    </div>
+    <div class="feature-card glass-panel scroll-reveal" style="transition-delay: 0.1s;">
+      <i class="fa-solid fa-cloud feature-icon"></i>
+      <h3>Cloud Native</h3>
+      <p>Seamless migrations to Exchange Online and Azure infrastructure.</p>
+    </div>
+    <div class="feature-card glass-panel scroll-reveal" style="transition-delay: 0.2s;">
+      <i class="fa-solid fa-terminal feature-icon"></i>
+      <h3>Automation</h3>
+      <p>PowerShell scripting for lifecycle management and efficiency.</p>
+    </div>
   </div>
 </section>

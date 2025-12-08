@@ -1,40 +1,33 @@
 <header class="navbar">
-    <div class="navbar-container">
-        <a href="{{ " /" | relative_url }}" class="navbar-brand">
-            Lokesh Chauhan
+    <a href="{{ "/" | relative_url }}" class="navbar-brand">
+        LKES.DEV
+    </a>
+
+    <nav class="navbar-menu">
+        <a href="{{ "/" | relative_url }}" class="nav-link">Home</a>
+        <a href="{{ "/experience.html" | relative_url }}" class="nav-link">Experience</a>
+        <a href="{{ "/project.html" | relative_url }}" class="nav-link">Projects</a>
+        <a href="{{ "/contact.html" | relative_url }}" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="navbar-actions">
+        <a href="{{ "/Lokesh_Chauhan.pdf" | relative_url }}" target="_blank" class="btn-cyber"
+            style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">
+            Resume
         </a>
-
-        <nav class="navbar-menu">
-            <a href="{{ " /index.html" | relative_url }}" class="nav-link">Home</a>
-            <a href="{{ " /experience.html" | relative_url }}" class="nav-link">Experience</a>
-            <a href="{{ " /project.html" | relative_url }}" class="nav-link">Projects</a>
-            <a href="{{ " /contact.html" | relative_url }}" class="nav-link">Contact</a>
-        </nav>
-
-        <div class="navbar-actions">
-            <a href="{{ " /Lokesh_Chauhan.pdf" | relative_url }}" target="_blank" class="btn btn-primary">
-                Resume
-            </a>
-            <!-- Mobile Toggle -->
-            <button class="menu-toggle" aria-label="Toggle Menu">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
+        <button class="menu-toggle" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
     </div>
 </header>
 
-<!-- Mobile Menu Overlay -->
-<div class="mobile-menu">
-    <div class="mobile-menu-header">
-        <span class="mobile-brand">Menu</span>
-        <button class="mobile-close"><i class="fas fa-times"></i></button>
-    </div>
+<!-- Mobile Menu Overlay (Kept simple for now) -->
+<div class="mobile-menu" id="mobile-menu">
+    <!-- JS will handle toggling class 'active' -->
     <div class="mobile-links">
-        <a href="{{ " /index.html" | relative_url }}">Home</a>
-        <a href="{{ " /experience.html" | relative_url }}">Experience</a>
-        <a href="{{ " /project.html" | relative_url }}">Projects</a>
-        <a href="{{ " /contact.html" | relative_url }}">Contact</a>
-        <hr>
-        <a href="{{ " /Lokesh_Chauhan.pdf" | relative_url }}" target="_blank">View Resume</a>
+        <a href="{{ "/" | relative_url }}">Home</a>
+        <a href="{{ "/experience.html" | relative_url }}">Experience</a>
+        <a href="{{ "/project.html" | relative_url }}">Projects</a>
+        <a href="{{ "/contact.html" | relative_url }}">Contact</a>
     </div>
 </div>

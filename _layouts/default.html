@@ -4,6 +4,8 @@
 {% include head.html %}
 
 <body>
+    <div id="canvas-container"></div>
+
     <!-- Header -->
     {% include header.html %}
 
@@ -15,6 +17,7 @@
     <!-- Footer -->
     {% include footer.html %}
 
+    <script src="{{ '/js/background-3d.js' | relative_url }}"></script>
     <script src="{{ '/scripts.js' | relative_url }}"></script>
 </body>
 
