@@ -3,83 +3,67 @@ layout: default
 title: Lokesh Chauhan | Portfolio
 ---
 
-<!-- Introduction -->
-<section id="intro">
-  <h2>Introduction</h2>
-  <p>
-    Hi, I'm Lokesh - Result-driven Microsoft 365 Engineer with extensive experience in Exchange Online, Defender and
-    Purview products. Proven expertise in deploying, managing, and troubleshooting complex Exchange Online
-    environments while implementing robust security measures to safeguard organizational data. Strong problem-solving
-    abilities and excellent communication skills, dedicated to providing exceptional support and driving continuous
-    improvement.
-  </p>
-  <p>
-    As a Messaging Specialist at <a href="https://www.cibc.com" target="_blank">CIBC</a>, I play a central role in
-    maintaining a highly available and stable Microsoft 365 messaging environment, with a strong focus on email
-    security, hygiene, and archiving across both cloud and on‑premises systems. My day‑to‑day responsibilities include
-    proactive monitoring, incident response, and participation in disaster recovery drills, where I help incorporate
-    lessons learned into future strategies.
-  </p>
-  <p>
-    I’ve successfully led several large‑scale initiatives, including designing and implementing mail‑flow rerouting
-    for over <strong>70,000</strong> users, automating the purge of sensitive emails for more than <strong>14,000
-      accounts</strong>, and migrating <strong>4,000+ mailboxes</strong> to meet strict data residency regulations. To
-    further strengthen resiliency, I deployed <strong>air‑gapped, immutable backups</strong> and introduced
-    <strong>ProofPoint</strong> Continuity to ensure uninterrupted email communications during outages. I’ve also
-    integrated multiple applications with secure Graph APIs, enhancing both reliability and security across the
-    environment. Through these projects, I’ve helped CIBC reduce operational risk, improve compliance, and ensure that
-    critical communication systems remain secure, resilient, and efficient at enterprise scale.
-  </p>
-  <p>
-    At <a href="https://www.sherweb.com/" target="_blank">SherWeb Inc.</a>, I had the opportunity to work directly
-    with a wide range of clients/enterprises, helping them navigate the complexities of Microsoft 365. My role went
-    far beyond troubleshooting — it was about building trust and ensuring that organizations could fully leverage the
-    Microsoft ecosystem. I supported environments that spanned Exchange Online, Microsoft Defender, Purview, Azure
-    Information Protection, Intune, Azure Identity, and SharePoint/OneDrive or Teams, often stepping in to resolve
-    high‑priority issues under tight deadlines.
-  </p>
-  <p>
-    One of the highlights of my time there was being recognized as Most Valuable Player (MVP) twice within a team of
-    more than 100 advisors. This recognition reflected not only my technical expertise but also my commitment to
-    SherWeb’s values of collaboration, accountability, and continuous improvement. I consistently shared knowledge
-    with colleagues, mentored newer team members, and contributed to refining internal processes so the entire team
-    could deliver faster, more reliable support.
-  </p>
-  <p>
-    These experiences gave me a deep understanding of how Microsoft 365 products interact in real‑world environments,
-    and how to balance technical precision with clear, client‑focused communication. It was a role that sharpened both
-    my problem‑solving skills and my ability to translate complex technical issues into solutions that made sense for
-    business leaders and IT teams alike.
-  </p>
-  <p>
-    As a graduate of <a href="https://flemingcollege.ca/" target="_blank">Sir Sandford Fleming College</a> with a
-    Post-Graduate Certificate in Wireless Information Networking program, I focused on wireless protocols, network
-    security, and enterprise infrastructure. With my certificate of <a
-      href="https://www.youracclaim.com/badges/b414cbb8-e886-48b3-8abf-9de14ab3e138/linked_in_profile">CCNA (Cisco
-      Certified Network Associate) </a>and CCENT ICND1 (Interconnecting Cisco Network Devices), I developed a strong
-    foundation in TCP/IP, routing, and switching, and completed lab‑based projects involving Cisco hardware and
-    network simulations. This program sharpened both my technical and analytical skills, preparing me for real‑world
-    IT environments.
-  </p>
-  <p>
-    Having worked as a Lab Assistant for the course Interfacing in my Post Graduate Certificate program, I had an
-    opportunity to help students understand programming codes, debug them, and make them understand how to
-    troubleshoot and solve errors in the code. I also helped them assemble and test the electronic kits of the lab and
-    cleaned out the useless files and folders after the lab was done.
-  </p>
-  <p>
-    My previous experience as a Jr. Engineer in Infinium India Ltd. helped me grow my interest in networking as I
-    worked on a 'Network Management System' project which was a small network created to handle equipment used in
-    satellite communication.
-  </p>
-  <p>
-    Accomplished Bachelor's of Engineering in Electronics and Telecommunication.
-  </p>
-  <p>
-    Love to solve any problem, especially with complex scenarios. Absolutely efficient for working on multiple
-    projects. My hobbies are traveling, learning something new, and cooking.
-  </p>
-  <div class="btn-center">
-    <a href="Lokesh_Chauhan.pdf" class="btn" target="_blank" download="Lokesh_Chauhan_Resume.pdf">Download Resume</a>
+<section class="hero-section">
+  <div class="hero-content">
+    <div class="profile-glow">
+      <img src="{{ " /img/profile.jpg" | relative_url }}" alt="Lokesh Chauhan" class="hero-profile-img">
+    </div>
+    <h1 class="hero-title">Hello, I'm <span class="text-gradient">Lokesh</span></h1>
+    <p class="hero-subtitle">I am a <span class="typing-text">Messaging Specialist</span></p>
+    <p class="hero-description">
+      Result-driven Microsoft 365 Engineer with extensive experience in Exchange Online, Defender, and Purview products.
+      Designing secure, resilient, and efficient communication systems at enterprise scale.
+    </p>
+
+    <div class="hero-actions">
+      <a href="{{ " /project.html" | relative_url }}" class="btn-neon">
+        <span>View My Work</span>
+        <i class="fas fa-arrow-right"></i>
+      </a>
+      <a href="{{ " /contact.html" | relative_url }}" class="btn-neon secondary">
+        <span>Get in Touch</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-card">
+      <h3>5+</h3>
+      <p>Years Experience</p>
+    </div>
+    <div class="stat-card">
+      <h3>MVP</h3>
+      <p>SherWeb Award</p>
+    </div>
+    <div class="stat-card">
+      <h3>70k+</h3>
+      <p>Users Migration</p>
+    </div>
   </div>
 </section>
+
+<!-- Typewriter Effect Script -->
+<script>
+  const texts = ["Messaging Specialist", "Microsoft 365 Engineer", "Cybersecurity Enthusiast", "CCNA Certified"];
+  let count = 0;
+  let index = 0;
+  let currentText = "";
+  let letter = "";
+
+  (function type() {
+    if (count === texts.length) {
+      count = 0;
+    }
+    currentText = texts[count];
+    letter = currentText.slice(0, ++index);
+
+    document.querySelector(".typing-text").textContent = letter;
+    if (letter.length === currentText.length) {
+      count++;
+      index = 0;
+      setTimeout(type, 2000); // Wait before erasing/next
+    } else {
+      setTimeout(type, 100);
+    }
+  })();
+</script>
