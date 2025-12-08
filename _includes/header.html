@@ -1,39 +1,40 @@
-<header class="glass-header">
-    <div class="logo-container">
-        <a href="{{ " /" | relative_url }}" class="logo-link">
-            <span class="logo-text">Lokesh<span class="logo-accent">.IO</span></span>
+<header class="navbar">
+    <div class="navbar-container">
+        <a href="{{ " /" | relative_url }}" class="navbar-brand">
+            Lokesh Chauhan
         </a>
+
+        <nav class="navbar-menu">
+            <a href="{{ " /index.html" | relative_url }}" class="nav-link">Home</a>
+            <a href="{{ " /experience.html" | relative_url }}" class="nav-link">Experience</a>
+            <a href="{{ " /project.html" | relative_url }}" class="nav-link">Projects</a>
+            <a href="{{ " /contact.html" | relative_url }}" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="navbar-actions">
+            <a href="{{ " /Lokesh_Chauhan.pdf" | relative_url }}" target="_blank" class="btn btn-primary">
+                Resume
+            </a>
+            <!-- Mobile Toggle -->
+            <button class="menu-toggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
     </div>
-
-    <nav class="nav-glass">
-        <ul class="nav-links">
-            <li><a href="{{ " /index.html" | relative_url }}" class="nav-item">Home</a></li>
-            <li><a href="{{ " /experience.html" | relative_url }}" class="nav-item">Experience</a></li>
-            <li><a href="{{ " /project.html" | relative_url }}" class="nav-item">Projects</a></li>
-            <li><a href="{{ " /certificates.html" | relative_url }}" class="nav-item">Certifications</a></li>
-            <li><a href="{{ " /contact.html" | relative_url }}" class="nav-item">Contact</a></li>
-        </ul>
-        <a href="{{ " /Lokesh_Chauhan.pdf" | relative_url }}" target="_blank" class="btn-neon small">
-            <span>Resume</span>
-        </a>
-    </nav>
-
-    <button class="mobile-toggle" aria-label="Toggle Navigation">
-        <i class="fas fa-bars"></i>
-    </button>
 </header>
 
-<div class="mobile-menu-overlay">
-    <div class="mobile-menu-content">
+<!-- Mobile Menu Overlay -->
+<div class="mobile-menu">
+    <div class="mobile-menu-header">
+        <span class="mobile-brand">Menu</span>
         <button class="mobile-close"><i class="fas fa-times"></i></button>
-        <ul class="mobile-links">
-            <li><a href="{{ " /index.html" | relative_url }}">Home</a></li>
-            <li><a href="{{ " /experience.html" | relative_url }}">Experience</a></li>
-            <li><a href="{{ " /project.html" | relative_url }}">Projects</a></li>
-            <li><a href="{{ " /certificates.html" | relative_url }}">Certifications</a></li>
-            <li><a href="{{ " /contact.html" | relative_url }}">Contact</a></li>
-            <li><a href="{{ " /Lokesh_Chauhan.pdf" | relative_url }}" target="_blank" class="mobile-resume">Resume</a>
-            </li>
-        </ul>
+    </div>
+    <div class="mobile-links">
+        <a href="{{ " /index.html" | relative_url }}">Home</a>
+        <a href="{{ " /experience.html" | relative_url }}">Experience</a>
+        <a href="{{ " /project.html" | relative_url }}">Projects</a>
+        <a href="{{ " /contact.html" | relative_url }}">Contact</a>
+        <hr>
+        <a href="{{ " /Lokesh_Chauhan.pdf" | relative_url }}" target="_blank">View Resume</a>
     </div>
 </div>

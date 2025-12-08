@@ -3,127 +3,101 @@ layout: default
 title: Experience | Lokesh Chauhan
 ---
 
-<section class="experience-section">
-    <div class="section-header">
-        <h2>Professional Journey</h2>
-        <p>A timeline of my career and key milestones</p>
+<section class="page-header">
+    <h2>Professional Journey</h2>
+    <p>A timeline of my career and key milestones</p>
+</section>
+
+<section class="timeline-clean">
+    <!-- CIBC -->
+    <div class="timeline-row">
+        <div class="timeline-time">
+            <span>2023 - Present</span>
+        </div>
+        <div class="timeline-data">
+            <h3>Messaging Specialist</h3>
+            <h4>Canadian Imperial Bank of Commerce (CIBC)</h4>
+            <div class="timeline-desc">
+                <p>Delivering highly available messaging services, focusing on email security, hygiene, and cloud
+                    archiving.</p>
+                <ul>
+                    <li><strong>Mail-Flow Rerouting:</strong> Implemented criterion-based routing for 65k+ users.</li>
+                    <li><strong>Security:</strong> Automating sensitive email purging and managing Defender policies.
+                    </li>
+                    <li><strong>Resiliency:</strong> Migrated 5k+ mailboxes regarding data residency and implemented
+                        immutable backups.</li>
+                    <li><strong>Continuity:</strong> Deployed ProofPoint for uninterrupted communication during outages.
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <div class="timeline">
-        <!-- CIBC -->
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Current</div>
-            <div class="timeline-content">
-                <h3>Messaging Specialist</h3>
-                <h4>Canadian Imperial Bank of Commerce (CIBC)</h4>
-                <div class="role-details">
-                    <p>Delivering highly available messaging services, focusing on email security, hygiene, and cloud
-                        archiving.</p>
-                    <ul>
-                        <li><strong>Mail-Flow Rerouting:</strong> Implemented criterion-based routing for 65k+ users.
-                        </li>
-                        <li><strong>Security:</strong> Automating sensitive email purging and managing Defender
-                            policies.</li>
-                        <li><strong>Resiliency:</strong> Migrated 5k+ mailboxes regarding data residency and implemented
-                            immutable backups.</li>
-                        <li><strong>Continuity:</strong> Deployed ProofPoint for uninterrupted communication during
-                            outages.</li>
-                        <li><strong>Automation:</strong> PowerShell scripting for AzureAD/MSOnline module migrations.
-                        </li>
-                    </ul>
+    <!-- Sherweb -->
+    <div class="timeline-row">
+        <div class="timeline-time">
+            <span>2019 - 2023</span>
+        </div>
+        <div class="timeline-data">
+            <h3>M365 Premier Support Engineer</h3>
+            <h4>Sherweb Inc.</h4>
+            <div class="timeline-desc">
+                <p>Elected <span style="color: var(--text-accent);">2x MVP</span> for exceptional team contribution.</p>
+                <ul>
+                    <li>Provided specialized support for Exchange Online, Defender, Intune, and Azure IP.</li>
+                    <li>Consulted with IT Directors on best practices and deployment strategies.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Beehive -->
+    <div class="timeline-row">
+        <div class="timeline-time">
+            <span>Project Lead</span>
+        </div>
+        <div class="timeline-data">
+            <h3>Team Lead - Beehive Monitor</h3>
+            <div class="timeline-desc">
+                <p>IoT project to monitor hive health in harsh Canadian climates.</p>
+                <ul>
+                    <li>Led a team of four to capture temperature/humidity via RaspberryPi.</li>
+                    <li>Automated reports and alerts using Python and Shell scripting.</li>
+                </ul>
+
+                <!-- Simple Carousel Grid -->
+                <div class="carousel-grid">
+                    <img src="{{ " /img/IMG1.jpg" | relative_url }}" alt="Beehive">
+                    <img src="{{ " /img/IMG2.jpg" | relative_url }}" alt="Beehive">
+                    <img src="{{ " /img/IMG3.jpg" | relative_url }}" alt="Beehive">
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- Sherweb -->
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Previous</div>
-            <div class="timeline-content">
-                <h3>M365 Premier Support Engineer</h3>
-                <h4>Sherweb Inc.</h4>
-                <div class="role-details">
-                    <p><span class="highlight">2x MVP Award Winner</span> for exceptional team contribution.</p>
-                    <ul>
-                        <li>Provided specialized support for Exchange Online, Defender, Intune, and Azure IP.</li>
-                        <li>Consulted with IT Directors on best practices and deployment strategies.</li>
-                        <li>Expertise in PowerShell for troubleshooting and automation.</li>
-                    </ul>
-                </div>
+    <!-- Scraper -->
+    <div class="timeline-row">
+        <div class="timeline-time">
+            <span>Research</span>
+        </div>
+        <div class="timeline-data">
+            <h3>Data Scraper Project</h3>
+            <div class="timeline-desc">
+                <p>Financial data scraping and analysis using Machine Learning models.</p>
             </div>
         </div>
+    </div>
 
-        <!-- Beehive Monitor -->
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Project Lead</div>
-            <div class="timeline-content">
-                <h3>Team Lead - Beehive Monitor</h3>
-                <div class="role-details">
-                    <p>IoT project to monitor hive health in harsh Canadian climates.</p>
-                    <ul>
-                        <li>Led a team of four to capture temperature/humidity via RaspberryPi.</li>
-                        <li>Automated reports and alerts using Python and Shell scripting.</li>
-                        <li>Implemented wireless management via OpenVPN for remote access.</li>
-                    </ul>
-
-                    <!-- Carousel -->
-                    <div class="carousel-container glass-carousel">
-                        <div class="nav-zone left" id="navLeft"></div>
-                        <div class="nav-zone right" id="navRight"></div>
-                        <div class="carousel-track">
-                            <div class="carousel-slide"><img src="{{ " /img/IMG1.jpg" | relative_url }}"
-                                    alt="Beehive 1"></div>
-                            <div class="carousel-slide"><img src="{{ " /img/IMG2.jpg" | relative_url }}"
-                                    alt="Beehive 2"></div>
-                            <div class="carousel-slide"><img src="{{ " /img/IMG3.jpg" | relative_url }}"
-                                    alt="Beehive 3"></div>
-                            <div class="carousel-slide"><img src="{{ " /img/IMG12.png" | relative_url }}"
-                                    alt="Beehive Dashboard"></div>
-                        </div>
-                        <div class="carousel-dots" id="carouselDots"></div>
-                    </div>
-                </div>
-            </div>
+    <!-- Lab Assistant -->
+    <div class="timeline-row">
+        <div class="timeline-time">
+            <span>Academic</span>
         </div>
-
-        <!-- Data Scraper -->
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Research</div>
-            <div class="timeline-content">
-                <h3>Data Scraper Project</h3>
-                <div class="role-details">
-                    <p>Financial data scraping and analysis using Machine Learning.</p>
-                    <ul>
-                        <li>Scraped 1500+ mutual fund prices from Yahoo Finance.</li>
-                        <li>Used BeautifulSoup, Pandas, and Regex for data cleaning.</li>
-                        <li>Applied linear regression to forecast stock trends.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <!-- Lab Assistant -->
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Academic</div>
-            <div class="timeline-content">
-                <h3>Lab Assistant</h3>
-                <h4>Sir Sandford Fleming College</h4>
+        <div class="timeline-data">
+            <h3>Lab Assistant</h3>
+            <h4>Sir Sandford Fleming College</h4>
+            <div class="timeline-desc">
                 <p>Guided students in network configuration, debugging, and lab equipment handling.</p>
-            </div>
-        </div>
-
-        <!-- Jr Engineer -->
-        <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-date">Early Career</div>
-            <div class="timeline-content">
-                <h3>Junior Engineer</h3>
-                <h4>Infinium India Ltd.</h4>
-                <p>Managed 'Network Management System' for satellite communication equipment.</p>
             </div>
         </div>
     </div>

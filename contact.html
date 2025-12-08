@@ -3,56 +3,39 @@ layout: default
 title: Contact | Lokesh Chauhan
 ---
 
-<section class="contact-section">
+<section class="page-header">
+    <h2>Get in Touch</h2>
+    <p>Open for collaborations, opportunities, or just a chat</p>
+</section>
+
+<section class="contact-clean">
+    <div class="contact-methods">
+        <div class="method-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>Lokesh.chauhan09@gmail.com</p>
+            <a href="mailto:lokesh.chauhan09@gmail.com" class="btn">Send Email</a>
+        </div>
+        <div class="method-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Phone</h3>
+            <p>(705) 977-6952</p>
+            <a href="tel:+17059776952" class="btn">Call Now</a>
+        </div>
+        <div class="method-card">
+            <i class="fab fa-linkedin"></i>
+            <h3>Social</h3>
+            <p>Connect on LinkedIn</p>
+            <a href="https://www.linkedin.com/in/lokeshchauhan09" target="_blank" class="btn">View Profile</a>
+        </div>
+    </div>
+
     <!-- Load Calendly script -->
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
-    <div class="section-header">
-        <h2>Let's Connect</h2>
-        <p>Open for collaborations, opportunities, or just a chat.</p>
-    </div>
-
-    <div class="contact-glass-card">
-        <!-- Left Panel: Info -->
-        <div class="contact-panel-info">
-            <h3>Get in Touch</h3>
-            <p class="contact-intro">I'm always open to discussing new projects, creative ideas, or opportunities to be
-                part of your visions.</p>
-
-            <div class="contact-details">
-                <a href="mailto:lokesh.chauhan09@gmail.com" class="contact-row">
-                    <div class="icon-box"><i class="fas fa-envelope"></i></div>
-                    <span>lokesh.chauhan09@gmail.com</span>
-                </a>
-
-                <a href="tel:+17059776952" class="contact-row">
-                    <div class="icon-box"><i class="fas fa-phone-alt"></i></div>
-                    <span>(705) 977-6952</span>
-                </a>
-            </div>
-
-            <div class="contact-buttons">
-                <a href="{{ " /Lokesh_Chauhan.pdf" | relative_url }}" target="_blank" class="btn-neon">
-                    <i class="fas fa-download"></i> Resume
-                </a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc6H0U6Pb505SsBXzaIL7adVoluevKHESt2JprrB7aPtz57uw/viewform"
-                    target="_blank" class="btn-neon secondary">
-                    <i class="fas fa-comment-dots"></i> Feedback
-                </a>
-            </div>
-
-            <!-- Socials Mini -->
-            <div class="panel-socials">
-                <a href="https://www.linkedin.com/in/lokeshchauhan09" target="_blank"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/lchauhan09" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-
-        <!-- Right Panel: Calendly -->
-        <div class="contact-panel-calendar">
-            <div class="calendly-inline-widget" data-url="https://calendly.com/lokesh-chauhan09/30min"
-                style="min-width:320px;height:700px;"></div>
-        </div>
+    <div class="calendar-wrapper">
+        <h3 style="text-align:center; margin-bottom: 2rem;">Schedule a Meeting</h3>
+        <div class="calendly-inline-widget" data-url="https://calendly.com/lokesh-chauhan09/30min"
+            style="min-width:320px;height:700px;"></div>
     </div>
 </section>
