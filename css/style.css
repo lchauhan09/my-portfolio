@@ -913,12 +913,20 @@ p {
    SCROLL REVEAL ANIMATIONS
    ============================================ */
 
+/* Scroll reveal - visible by default for non-JS fallback */
 .scroll-reveal {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.8s ease, transform 0.8s var(--ease-out-expo);
 }
 
+/* When JS is ready, hide elements for reveal animation */
+.js-ready .scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.js-ready .scroll-reveal.revealed,
 .scroll-reveal.revealed {
   opacity: 1;
   transform: translateY(0);
