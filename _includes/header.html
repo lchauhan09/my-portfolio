@@ -1,33 +1,34 @@
-<header class="navbar">
+<header class="navbar" id="navbar">
     <a href="{{ "/" | relative_url }}" class="navbar-brand">
-        LKES.DEV
+        <span class="gradient-text">LOKESH</span>.DEV
     </a>
 
     <nav class="navbar-menu">
         <a href="{{ "/" | relative_url }}" class="nav-link">Home</a>
         <a href="{{ "/experience.html" | relative_url }}" class="nav-link">Experience</a>
         <a href="{{ "/project.html" | relative_url }}" class="nav-link">Projects</a>
+        <a href="{{ "/certificates.html" | relative_url }}" class="nav-link">Certs</a>
         <a href="{{ "/contact.html" | relative_url }}" class="nav-link">Contact</a>
     </nav>
 
     <div class="navbar-actions">
-        <a href="{{ "/Lokesh_Chauhan.pdf" | relative_url }}" target="_blank" class="btn-cyber"
-            style="padding: 0.5rem 1.5rem; font-size: 0.8rem;">
-            Resume
+        <a href="{{ "/Lokesh_Chauhan.pdf" | relative_url }}" target="_blank" class="btn-cyber">
+            <i class="fa-solid fa-file-arrow-down"></i> Resume
         </a>
-        <button class="menu-toggle" aria-label="Toggle Menu">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
             <i class="fas fa-bars"></i>
         </button>
     </div>
 </header>
 
-<!-- Mobile Menu Overlay (Kept simple for now) -->
+<!-- Mobile Menu Overlay -->
 <div class="mobile-menu" id="mobile-menu">
-    <!-- JS will handle toggling class 'active' -->
     <div class="mobile-links">
         <a href="{{ "/" | relative_url }}">Home</a>
         <a href="{{ "/experience.html" | relative_url }}">Experience</a>
         <a href="{{ "/project.html" | relative_url }}">Projects</a>
+        <a href="{{ "/certificates.html" | relative_url }}">Certifications</a>
         <a href="{{ "/contact.html" | relative_url }}">Contact</a>
+        <a href="{{ "/Lokesh_Chauhan.pdf" | relative_url }}" target="_blank" class="gradient-text">Download Resume</a>
     </div>
 </div>

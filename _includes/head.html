@@ -1,15 +1,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Lokesh Chauhan - Messaging Specialist & Microsoft 365 Engineer. Expert in Exchange Online, Microsoft Defender, PowerShell automation, and cloud security.">
+    <meta name="keywords" content="Microsoft 365, Exchange Online, Cloud Security, PowerShell, Azure, CIBC">
+    <meta name="author" content="Lokesh Chauhan">
     <title>{{ page.title | default: site.title }}</title>
+
+    <!-- Fonts: Space Grotesk (Display) + Inter (Body) + JetBrains Mono (Code) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- New Fonts: Outfit (Display) & IBM Plex Mono (Tech/Code) -->
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ "/css/style.css?v=4" | relative_url }}">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="{{ "/css/style.css?v=5" | relative_url }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- CDNs: Three.js & GSAP -->
@@ -17,6 +23,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
+    <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="{{ "/favicon.svg" | relative_url }}">
     <link rel="manifest" href="{{ "/site.webmanifest" | relative_url }}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ page.title | default: site.title }}">
+    <meta property="og:description"
+        content="Messaging Specialist & Microsoft 365 Engineer specializing in cloud security and automation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 </head>
