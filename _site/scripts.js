@@ -89,13 +89,13 @@ document.addEventListener('DOMContentLoaded', () => {
       gsap.from(card, {
         scrollTrigger: {
           trigger: card,
-          start: 'top 85%',
+          start: 'top 90%',
           toggleActions: 'play none none none'
         },
-        y: 40,
+        y: 30,
         opacity: 0,
-        duration: 0.8,
-        delay: i * 0.1,
+        duration: 0.5,
+        delay: i * 0.05,
         ease: 'power3.out'
       });
     });
@@ -105,13 +105,13 @@ document.addEventListener('DOMContentLoaded', () => {
       gsap.from(item, {
         scrollTrigger: {
           trigger: item,
-          start: 'top 80%',
+          start: 'top 90%',
           toggleActions: 'play none none none'
         },
-        x: -30,
+        x: -20,
         opacity: 0,
-        duration: 0.8,
-        delay: i * 0.15,
+        duration: 0.5,
+        delay: i * 0.08,
         ease: 'power3.out'
       });
     });
@@ -121,13 +121,13 @@ document.addEventListener('DOMContentLoaded', () => {
       gsap.from(card, {
         scrollTrigger: {
           trigger: card,
-          start: 'top 85%',
+          start: 'top 90%',
           toggleActions: 'play none none none'
         },
-        y: 30,
+        y: 20,
         opacity: 0,
-        duration: 0.6,
-        delay: (i % 3) * 0.1,
+        duration: 0.4,
+        delay: (i % 3) * 0.05,
         ease: 'power3.out'
       });
     });
