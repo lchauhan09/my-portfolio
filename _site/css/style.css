@@ -43,6 +43,116 @@
 }
 
 /* ============================================
+   LIGHT THEME
+   ============================================ */
+
+:root[data-theme="light"] {
+  /* --- Light Color Palette --- */
+  --bg-void: #f8fafc;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f1f5f9;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  --border-subtle: rgba(15, 23, 42, 0.1);
+  --border-glow: rgba(0, 180, 150, 0.4);
+
+  /* Aurora colors adjusted for light mode visibility */
+  --aurora-teal: #00a88a;
+  --aurora-blue: #0077cc;
+  --aurora-violet: #7c3aed;
+  --aurora-pink: #db2777;
+}
+
+/* Light mode specific overrides */
+:root[data-theme="light"] body::before {
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 40%, rgba(0, 212, 170, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse 60% 40% at 80% 20%, rgba(0, 153, 255, 0.10) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 30% at 50% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
+}
+
+/* Light mode navbar */
+:root[data-theme="light"] .navbar {
+  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+:root[data-theme="light"] .navbar.scrolled {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Light mode mobile menu */
+:root[data-theme="light"] .mobile-menu {
+  background: rgba(248, 250, 252, 0.98);
+}
+
+:root[data-theme="light"] .mobile-links a {
+  color: var(--text-primary);
+}
+
+/* ============================================
+   THEME TOGGLE BUTTON
+   ============================================ */
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  transition: var(--transition-smooth);
+}
+
+.theme-toggle:hover {
+  color: var(--aurora-teal);
+  border-color: var(--border-glow);
+  background: rgba(0, 212, 170, 0.1);
+  box-shadow: 0 0 20px rgba(0, 212, 170, 0.2);
+  transform: rotate(15deg);
+}
+
+.theme-toggle i {
+  transition: transform 0.4s var(--ease-out-expo);
+}
+
+.theme-toggle:active i {
+  transform: rotate(360deg);
+}
+
+/* ============================================
+   THEME TRANSITION
+   ============================================ */
+
+body,
+body::before,
+.navbar,
+.mobile-menu,
+.glass-panel,
+.glass-panel-static,
+.site-footer,
+.feature-card,
+.project-card,
+.timeline-item::before {
+  transition:
+    background-color 0.4s ease,
+    border-color 0.4s ease,
+    color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+/* ============================================
    RESET & BASE STYLES
    ============================================ */
 
